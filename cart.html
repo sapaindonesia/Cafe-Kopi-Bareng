@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang - Cafe NKopi Bareng</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">☕ Cafe Kopi Bareng</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="cart.html">Keranjang <span id="cart-count">(0)</span></a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section style="padding: 120px 0 5rem 0;">
+        <div class="container">
+            <h2 class="section-title">Keranjang Belanja</h2>
+            <div id="cart-empty" style="text-align:center; font-size:1.2rem; color:#666;">
+                Keranjang kosong. <a href="menu.html">Tambah item!</a>
+            </div>
+            <div id="cart-items"></div>
+            <div style="text-align:right;">
+                <div class="total" id="cart-total">Total: Rp0</div>
+                <a href="checkout.html" class="cta-button" id="checkout-btn" style="display:none; margin-top:1rem;">Checkout</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>&copy; 2024 Cafe Kopi Bareng. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
